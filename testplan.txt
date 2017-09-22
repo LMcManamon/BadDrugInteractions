@@ -1,0 +1,8 @@
+# BadDrugInteractions
+For sprint 1, our task is to create a two page user interface with a home page, and a search page. The search page will have a button that will connect to a sqlite dummy database and be able to pull information from there, then display it onto the screen. The user can then hit a button to remove the information.
+
+The first and most simple test will be to ensure that the program boots up properly. It should display the home screen, which at the moment has one button. This can be ensured by a unit test.
+
+There are several GUI aspects of the program that also need to be tested. The easiest way to ensure that the GUI functions is to simply do a simple blackbox test, where the user simply pushes the GUI navigation buttons and makes sure that they all accomplish their intended goal. This is a much easier task than taking all the automatic GUI code from android studio and create unit tests for all the functions for all scenarios.
+
+Another test that must be written and accomplished is for grabbing information from the database. The function will take in a String entry, use that to query the sqllite database, and if there is a matching instance it returns the information, otherwise it does nothing. Unit tests are needed for the instances where a query hits, and for when the query misses.
